@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen bei War of Nations</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/auth.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Willkommen bei <span>War of Nations</span></h1>
+            <p>Erobere die Welt mit Strategie und Geschick!</p>
+        </header>
+
+        <div class="form-container">
+            <!-- Registrierung -->
+            <div class="form-section">
+                <h2>Registrieren</h2>
+                <form id="register-form">
+                    <input type="text" id="register-username" name="username" placeholder="Benutzername" required>
+                    <input type="password" id="register-password" name="password" placeholder="Passwort" required>
+                    <button type="submit">Registrieren</button>
+                </form>
+            </div>
+
+            <!-- Login -->
+            <div class="form-section">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="text" id="login-username" name="username" placeholder="Benutzername" required>
+                    <input type="password" id="login-password" name="password" placeholder="Passwort" required>
+                    <button type="submit">Einloggen</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

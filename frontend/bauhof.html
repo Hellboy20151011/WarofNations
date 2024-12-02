@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War of Nations - Bauhof</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="module" src="./js/statusbar.js"></script>
+</head>
+<body data-page="bauhof">
+    <!-- Navigationsblock -->
+    <div class="navigation">
+        <ul>
+            <li><a href="/dashboard.html">Dashboard</a></li>
+            <li><a href="/bauhof.html">Bauhof</a></li>
+            <!-- Submenü für den Bauhof -->
+            <li class="bauhof-submenu">
+                <ul class="submenu">
+                    <li><a href="/geldproduktion.html">Geldproduktion</a></li>
+                    <li><a href="/materialproduktion.html">Materialproduktion</a></li>
+                </ul>
+            </li>
+            <li><button id="logoutButton">Logout</button></li>
+        </ul>
+    </div>
+
+<!-- Statusbar -->
+<div id="status-bar" class="status-bar">
+    <span>💰 Geld: <span id="Geld-display">0.00</span></span>
+    <span>🪨 Stein: <span id="Stein-display">0.00</span></span>
+    <span>⚙️ Metall: <span id="Metall-display">0.00</span></span>
+    <span>🔌 Strom: <span id="Strom-display">0.00</span></span>
+    <span>⛽ Treibstoff: <span id="Treibstoff-display">0.00</span></span>
+</div>
+
+    <!-- Hauptinhalt -->
+    <div class="main-content">
+        <h1>Bauhof</h1>
+        <p>Wählen Sie eine der Produktionskategorien, um Gebäude zu verwalten und Ressourcen zu steigern.</p>
+        <div class="building-categories">
+            <div class="category-item">
+                <img src="assets/images/money_production.jpg" alt="Geldproduktion" class="category-image">
+                <h3>Geldproduktion</h3>
+                <p>Verwalten Sie Gebäude, die Geld produzieren, wie Banken, Börsen und Goldminen.</p>
+                <a href="/geldproduktion.html" class="category-link">Zur Geldproduktion</a>
+            </div>
+            <div class="category-item">
+                <img src="assets/images/material_production.jpg" alt="Materialproduktion" class="category-image">
+                <h3>Materialproduktion</h3>
+                <p>Erstellen Sie Gebäude für Ressourcen wie Stein, Metall, Energie und Treibstoff.</p>
+                <a href="/materialproduktion.html" class="category-link">Zur Materialproduktion</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/navigation.js"></script>
+    <script>
+        // Dynamisches Anzeigen des Bauhof-Submenüs
+        document.addEventListener('DOMContentLoaded', () => {
+            const navigation = document.querySelector('.navigation');
+            const currentPage = document.body.getAttribute('data-page');
+
+            if (currentPage === 'bauhof') {
+                navigation.setAttribute('data-active', 'bauhof');
+            } else {
+                navigation.removeAttribute('data-active');
+            }
+        });
+    </script>
+</body>
+</html>

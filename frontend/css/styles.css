@@ -1,0 +1,157 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Anthrazit-Hintergrund */
+    color: #d3d3d3; /* Helles Grau */
+}
+
+/* Hauptcontainer */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Seitenleiste */
+.sidebar {
+    width: 250px;
+    background-color: #2b2b2b;
+    color: #d3d3d3;
+    padding: 20px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    color: #f0a500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #d3d3d3;
+    display: block;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #f0a500;
+    color: #000;
+}
+
+/* Hauptinhalt */
+.main-content {
+    flex: 1;
+    background: #1c1c1c;
+    color: #d3d3d3;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #f0a500; /* Gelbe Akzentfarbe */
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #d3d3d3; /* Helles Grau */
+    text-align: center;
+}
+
+/* Formulare */
+.form-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.form-section {
+    background: #2b2b2b; /* Dunkles Grau */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 300px;
+}
+
+.form-section h2 {
+    color: #f0a500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #444; /* Noch dunkleres Grau */
+    color: #d3d3d3;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0a500; /* Gelbe Akzentfarbe */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #d49b00; /* Abgedunkeltes Gelb */
+    color: #fff;
+}
+
+/* Tabellen */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2b2b2b;
+    color: #d3d3d3;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+.table th {
+    background: #333;
+    color: #f0a500;
+}
+
+.table tr:nth-child(even) {
+    background: #1c1c1c;
+}
+
+/* Chat und Statusleiste */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #2b2b2b;
+    margin-bottom: 20px;
+    color: #f0a500;
+    font-weight: bold;
+}

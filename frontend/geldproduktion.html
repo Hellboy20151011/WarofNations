@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geldproduktion</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/navigation.js"></script>
+    <script type="module" src="./js/statusbar.js"></script>
+    <script type="module" src="./js/geldproduktion.js"></script>
+</head>
+<body data-page="bauhof">
+    <!-- Navigation -->
+    <div class="navigation">
+        <ul>
+            <li><a href="/dashboard.html">Dashboard</a></li>
+            <li><a href="/bauhof.html">Bauhof</a></li>
+            <li class="bauhof-submenu">
+                <ul class="submenu">
+                    <li><a href="/geldproduktion.html">Geldproduktion</a></li>
+                    <li><a href="/materialproduktion.html">Materialproduktion</a></li>
+                </ul>
+            </li>
+            <li><button id="logoutButton">Logout</button></li>
+        </ul>
+    </div>
+
+    <!-- Statusleiste -->
+    <div id="status-bar" class="status-bar">
+        <span>💰 Geld: <span id="Geld-display">0.00</span></span>
+        <span>🪨 Stein: <span id="Stein-display">0.00</span></span>
+        <span>⚙️ Metall: <span id="Metall-display">0.00</span></span>
+        <span>🔌 Strom: <span id="Strom-display">0.00</span></span>
+        <span>⛽ Treibstoff: <span id="Treibstoff-display">0.00</span></span>
+    </div>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <h1>Geldproduktion</h1>
+        <div id="building-costs"></div>
+            <!-- Dynamisch generierter Inhalt -->
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Seitenleiste -->
+      <aside class="sidebar">
+        <h2>Menü</h2>
+        <ul>
+          <li><a href="#">Übersicht</a></li>
+          <li><a href="#">Bauzentrum</a></li>
+          <li><a href="#">Union</a></li>
+          <li><a href="#">Militär</a></li>
+          <li><a href="#">Geheimdienst</a></li>
+          <li><a href="#">Forschung</a></li>
+          <li><a href="#">Bank</a></li>
+          <li><a href="#">Wetterstation</a></li>
+          <li><a href="#">Recyclinghof</a></li>
+          <li><a href="#">Pipeline</a></li>
+        </ul>
+        <div class="sidebar-footer">
+          <h3>Chat</h3>
+          <ul>
+            <li><a href="#">Nachrichten</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Hauptinhalt -->
+      <main class="main-content">
+        <header class="header">
+          <h1>Dashboard</h1>
+          <div class="status-bar">
+            <!-- Ressourcen werden hier dynamisch eingefügt -->
+          </div>
+        </header>
+
+        <section class="content">
+          <!-- Gebäudeliste -->
+          <div class="buildings">
+            <h2>Gebäude</h2>
+            <ul id="buildings-list">
+              <!-- Gebäudeliste wird hier dynamisch eingefügt -->
+            </ul>
+          </div>
+
+          <!-- Aufträge -->
+          <div class="tasks">
+            <h2>Aufträge</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Bau & Ausbau</th>
+                  <th>Einheiten & Verteidigung</th>
+                  <th>Forschung</th>
+                  <th>Handel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>- Keine Aufträge -</td>
+                  <td>- Keine Aufträge -</td>
+                  <td>- Keine Aufträge -</td>
+                  <td>- Keine Aufträge -</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Einnahmen & Ausgaben -->
+          <div class="finances">
+            <h2>Einnahmen & Ausgaben</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Posten</th>
+                  <th>Einnahmen</th>
+                  <th>Ausgaben</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bauzentrale</td>
+                  <td>0 €</td>
+                  <td>0 €</td>
+                </tr>
+                <tr>
+                  <td>Armeekosten</td>
+                  <td>0 €</td>
+                  <td>0 €</td>
+                </tr>
+                <tr>
+                  <td>Geheimdienst</td>
+                  <td>0 €</td>
+                  <td>0 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Dein HTML-Inhalt hier -->
+
+    <!-- JavaScript-Datei einbinden -->
+    <script src="js/dashboard.js"></script>
+
+  </body>
+</html>
